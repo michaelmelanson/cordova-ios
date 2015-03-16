@@ -99,7 +99,7 @@ function getXcodeArgs(projectName, projectPath, configuration, isDevice) {
         xcodebuildArgs = [
             '-xcconfig', path.join(__dirname, '..', 'build-' + configuration.toLowerCase() + '.xcconfig'),
             '-project', projectName + '.xcodeproj',
-            'ARCHS=armv7 armv7s arm64',
+            'ARCHS=armv7 arm64',
             '-target', projectName,
             '-configuration', configuration,
             '-sdk', 'iphoneos',
